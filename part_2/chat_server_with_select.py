@@ -1,3 +1,7 @@
+'''
+使用select.select实现聊天室服务器
+将server端和client端放到了同一个文件中
+'''
 import select
 import socket
 import sys
