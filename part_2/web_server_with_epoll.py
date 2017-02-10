@@ -1,3 +1,6 @@
+'''
+使用select.epoll实现多路复用Web服务器
+'''
 import socket
 import select
 import argparse
@@ -15,8 +18,8 @@ class WebServer(object):
         self.sock.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
         self.sock.bind((host, port))
         self.sock.listen(1)
-        self.sock.setblocking(0)
-        self.sock.setsockopt(socket.IPPROTO_TCP, socket.TCP_NODELAY, 1)
+        self.sock.setblocking(0)    #设定为非阻塞模式
+        self.sock.setsockopt(socket.IPPROTO_TCP, socket.TCP_NODELAY, 1) #服务器无需缓冲即可直接交换数据
         print 'Started Epoll Server'
         self.epoll = select.epoll()
         self.epoll.register(self.sock.fileno(), select.EPOLLIN)
