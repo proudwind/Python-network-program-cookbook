@@ -4,3 +4,4 @@
 * select [http://www.cnblogs.com/coser/archive/2012/01/06/2315216.html](http://www.cnblogs.com/coser/archive/2012/01/06/2315216.html)
 * struct [http://www.pythontab.com/html/2016/pythonhexinbiancheng_1010/1074.html](http://www.pythontab.com/html/2016/pythonhexinbiancheng_1010/1074.html)
 * cPickle (类似于序列化与反序列化) [http://www.cnblogs.com/vamei/archive/2012/09/15/2684781.html](http://www.cnblogs.com/vamei/archive/2012/09/15/2684781.html)
+* signal [http://blog.csdn.net/alvine008/article/details/24454159](http://blog.csdn.net/alvine008/article/details/24454159)
